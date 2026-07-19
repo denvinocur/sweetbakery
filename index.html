@@ -1,130 +1,650 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Pasteleria</title>
+
+    <title>Sweet Bakery | Pastelería Artesanal</title>
+
+    <meta name="description"
+        content="Sweet Bakery - Pastelería artesanal con tortas, cupcakes, cookies y postres personalizados.">
+
+    <meta name="keywords"
+        content="pastelería, bakery, tortas, cupcakes, cookies, postres">
+
+    <meta name="author" content="Denise">
+
+    <link rel="icon" href="img/favicon.png">
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Google Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Sweet Bakery</h1>
+    <!-- ================= NAVBAR ================= -->
 
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#reseñas">Reseñas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="#">
+                    🍰 Sweet Bakery
+                </a>
+
+                <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse"
+                    id="menu">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                                href="#inicio">
+
+                                Inicio
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                                href="#productos">
+
+                                Productos
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                                href="#reseñas">
+
+                                Reseñas
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link"
+                                href="#contacto">
+
+                                Contacto
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                    <button
+                        id="btnCarrito"
+                        class="btn btn-light ms-lg-4 mt-3 mt-lg-0">
+
+                        <i class="bi bi-cart-fill"></i>
+
+                        Carrito
+
+                        <span
+                            id="contadorCarrito"
+                            class="badge bg-danger">
+
+                            0
+
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
         </nav>
+
     </header>
 
-    <!-- MAIN -->
+    <!-- ================= HERO ================= -->
+
     <main>
 
-        <!-- SECCIÓN INICIO -->
-        <section id="inicio" class="hero">
-            <h2>Bienvenidos a nuestra tienda</h2>
-            <p>Las mejores tortas, postres y productos artesanales para cada ocasión.</p>
-        </section>
+        <section
+            id="inicio"
+            class="hero">
 
-        <!-- SECCIÓN PRODUCTOS -->
-        <section id="productos">
-            <h2>Nuestros Productos</h2>
+            <div class="container">
 
-            <div class="contenedor-productos">
+                <div class="row align-items-center">
 
-                <div class="card">
-                    <img src="https://notonlysaladblog.com/wp-content/uploads/2018/07/Torta-choco-cerveza-negra-5-Large.jpg" alt="Torta Chocolate">
-                    <h3>Torta Chocolate</h3>
-                    <p>Bizcochuelo húmedo con relleno de chocolate.</p>
-                </div>
+                    <div class="col-lg-6">
 
-                <div class="card">
-                    <img src="https://www.molinos.com.ar/wp-content/uploads/2023/02/CHEESECAKE-CON-FRUTOS-ROJOS.webp" alt="Cheesecake">
-                    <h3>Cheesecake</h3>
-                    <p>Cheesecake artesanal con frutos rojos.</p>
-                </div>
+                        <h1>
 
-                <div class="card">
-                    <img src="https://vainillacakes.com/wp-content/uploads/2021/08/VAINILLA-CAKES-AGO-2021-PARA-WEB-57.jpg" alt="Celular">
-                    <h3>Cupcakes</h3>
-                    <p>Cupcakes decorados personalizados.</p>
+                            Endulzamos tus momentos especiales
+
+                        </h1>
+
+                        <p>
+
+                            Descubrí nuestras tortas, cupcakes,
+                            cookies y postres elaborados
+                            artesanalmente con ingredientes frescos.
+
+                        </p>
+
+                        <a href="#productos"
+                            class="btn btn-pink">
+
+                            Ver productos
+
+                        </a>
+
+                    </div>
+
+                    <div class="col-lg-6 text-center">
+
+                        <img
+                            src="img/hero.png"
+                            alt="Torta artesanal"
+                            class="img-fluid hero-img">
+
+                    </div>
+
                 </div>
 
             </div>
+
         </section>
 
-        <!-- SECCIÓN RESEÑAS -->
-        <section id="reseñas">
-            <h2>Reseñas</h2>
+        <!-- ================= PRODUCTOS ================= -->
 
-            <div class="grid-reseñas">
-                <div class="reseña">
-                    <h3>Ana</h3>
-                    <p>Las tortas llegaron perfectas y súper ricas.</p>
-                </div>
+        <section
+            id="productos"
+            class="container py-5">
 
-                <div class="reseña">
-                    <h3>Lucas</h3>
-                    <p>La atención fue excelente y muy rápida.</p>
-                </div>
+            <div class="text-center mb-5">
 
-                <div class="reseña">
-                    <h3>Sofía</h3>
-                    <p>Los postres son increíbles y frescos.</p>
-                </div>
+                <h2>
 
-                <div class="reseña">
-                    <h3>Martín</h3>
-                    <p>Todo muy rico y con una presentación hermosa.</p>
-                </div>
+                    Nuestros Productos
+
+                </h2>
+
+                <p id="cantidadProductos"></p>
+
+                <p>
+
+                    Elegí tus favoritos y agregalos al carrito.
+
+                </p>
+
             </div>
+
+            <!-- BUSCADOR -->
+
+            <div class="row mb-4">
+
+                <div class="col-lg-6 mx-auto">
+
+                    <input
+                        type="text"
+                        id="buscador"
+                        class="form-control"
+                        placeholder="Buscar productos...">
+
+                </div>
+
+            </div>
+
+            <!-- FILTROS -->
+
+            <div class="text-center mb-4">
+
+                <button class="btn btn-outline-secondary filtro"
+                    data-categoria="all">
+
+                    Todos
+
+                </button>
+
+                <button class="btn btn-outline-secondary filtro"
+                    data-categoria="cakes">
+
+                    Tortas
+
+                </button>
+
+                <button class="btn btn-outline-secondary filtro"
+                    data-categoria="cupcakes">
+
+                    Cupcakes
+
+                </button>
+
+                <button class="btn btn-outline-secondary filtro"
+                    data-categoria="cookies">
+
+                    Cookies
+
+                </button>
+
+            </div>
+
+            <!-- CONTENEDOR PRODUCTOS -->
+
+            <div
+                id="contenedorProductos"
+                class="row g-4">
+
+                <!-- El contenido será generado por JavaScript -->
+
+            </div>
+
         </section>
 
-        <!-- MULTIMEDIA -->
-        <section class="video-section">
-            <h2>Conocé Nuestra Pastelería</h2>
+         <!-- ================= CARRITO ================= -->
 
-            <iframe width="560" height="315"
-                src="https://youtu.be/ZxnlRUO-0qU?si=qMBba4SN0nsJnBZX"
-                title="YouTube video player"
-                frameborder="0"
-                allowfullscreen>
+        <section
+            id="carrito"
+            class="container py-5">
+
+            <div class="row">
+
+                <div class="col-lg-10 mx-auto">
+
+                    <div class="card shadow">
+
+                        <div class="card-body">
+
+                            <h2 class="text-center mb-4">
+
+                                🛒 Carrito de Compras
+
+                            </h2>
+
+                            <div id="itemsCarrito">
+
+                                <!-- JavaScript -->
+
+                            </div>
+
+                            <hr>
+
+                            <div class="d-flex justify-content-between align-items-center">
+
+                                <h4>
+
+                                    Total: $ <span id="totalCarrito">0</span>
+
+                                </h4>
+
+                                <a href="#productos" class="btn btn-secondary">
+
+                                 Seguir comprando
+
+                                </a>
+
+                                <button
+                                    id="vaciarCarrito"
+                                    class="btn btn-danger">
+
+                                    Vaciar carrito
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= RESEÑAS ================= -->
+
+        <section
+            id="reseñas"
+            class="py-5">
+
+            <div class="container">
+
+                <div class="text-center mb-5">
+
+                    <h2>
+
+                        Lo que dicen nuestros clientes
+
+                    </h2>
+
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+
+                        <div class="review">
+
+                            <div class="estrellas">
+
+                                ⭐⭐⭐⭐⭐
+
+                            </div>
+
+                            <p>
+
+                                "Las tortas son deliciosas y la presentación impecable."
+
+                            </p>
+
+                            <strong>
+
+                                Sofía
+
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="review">
+
+                            <div class="estrellas">
+
+                                ⭐⭐⭐⭐⭐
+
+                            </div>
+
+                            <p>
+
+                                "Compré cupcakes para un cumpleaños y fueron un éxito."
+
+                            </p>
+
+                            <strong>
+
+                                Martín
+
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="review">
+
+                            <div class="estrellas">
+
+                                ⭐⭐⭐⭐⭐
+
+                            </div>
+
+                            <p>
+
+                                "Excelente atención y productos de primera calidad."
+
+                            </p>
+
+                            <strong>
+
+                                Camila
+
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= VIDEO ================= -->
+
+        <section class="container py-5">
+
+            <div class="text-center mb-4">
+
+                <h2>
+
+                    Conocé Sweet Bakery
+
+                </h2>
+
+            </div>
+
+            <div class="ratio ratio-16x9">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wD-g_Gyn2I4?si=RezwBSRS9QxeRSCR" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
             </iframe>
+</div>
+
+            </div>
+
         </section>
 
-        <!-- CONTACTO -->
-        <section id="contacto">
-            <h2>Contacto</h2>
+        <!-- ================= CONTACTO ================= -->
 
-            <form action="https://formspree.io/f/mojbkpyk" method="POST">
+        <section
+            id="contacto"
+            class="container py-5">
 
-                <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <div class="row justify-content-center">
 
-                <input type="email" name="email" placeholder="Tu correo" required>
+                <div class="col-lg-8">
 
-                <textarea name="mensaje" placeholder="Escribí tu mensaje" required></textarea>
+                    <div class="card shadow">
 
-                <button type="submit">Enviar</button>
-            </form>
+                        <div class="card-body p-4">
+
+                            <h2 class="text-center mb-4">
+
+                                Contactanos
+
+                            </h2>
+
+                            <form
+                                id="formulario"
+                                action="https://formspree.io/f/mojbkpyk"
+                                method="POST"
+                                novalidate>
+
+                                <div class="mb-3">
+
+                                    <label
+                                     for="nombre"
+                                     class="form-label">
+
+                                  Nombre
+
+                                     </label>
+
+                                  <input
+                                      type="text"
+                                      class="form-control"
+                                      id="nombre"
+                                      name="nombre">
+
+                                 <small id="errorNombre" class="text-danger"></small>
+
+                                </div>
+
+                                <div class="mb-3">
+
+                                    <label
+                                        for="email"
+                                        class="form-label">
+
+                                        Correo electrónico
+
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                        name="email">
+
+                                        <small id="errorEmail" class="text-danger"></small>
+
+                                </div>
+
+                                <div class="mb-3">
+
+                                    <label
+                                        for="mensaje"
+                                        class="form-label">
+
+                                        Mensaje
+
+                                    </label>
+
+                                    <textarea
+                                         class="form-control"
+                                         id="mensaje"
+                                         name="mensaje"
+                                         rows="5"></textarea>
+
+                                    <small id="errorMensaje" class="text-danger"></small>
+
+                                </div>
+
+                                <div class="text-center">
+
+                                    <button
+                                        type="submit"
+                                        class="btn btn-pink"
+                                        id="btnEnviar">
+
+                                        Enviar mensaje
+
+                                    </button>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Sweet Bakery</p>
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="py-4">
+
+        <div class="container text-center">
+
+            <h4>
+
+                🍰 Sweet Bakery
+
+            </h4>
+
+            <p>
+
+                Pastelería artesanal · Tortas · Cupcakes · Cookies
+
+            </p>
+
+            <div class="redes">
+
+                <i class="bi bi-instagram"></i>
+
+                <i class="bi bi-facebook"></i>
+
+                <i class="bi bi-whatsapp"></i>
+
+            </div>
+
+            <p class="mt-3">
+
+                © 2026 Sweet Bakery - Todos los derechos reservados.
+
+            </p>
+
+        </div>
+
     </footer>
 
+    <!-- Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript -->
+
+    <div
+class="toast-container position-fixed bottom-0 end-0 p-3">
+
+<div
+id="toastProducto"
+class="toast">
+
+<div class="toast-body">
+
+Producto agregado al carrito.
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
+
 </html>

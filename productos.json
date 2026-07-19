@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Cheesecake",
+    "description": "Cheesecake clásico con frutos rojos.",
+    "price": 18500,
+    "category": "cakes",
+    "thumbnail": "img/cheesecake.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Torta de Chocolate",
+    "description": "Bizcochuelo de chocolate con ganache.",
+    "price": 21000,
+    "category": "cakes",
+    "thumbnail": "img/chocolate.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Cupcakes Vainilla",
+    "description": "Pack de 6 cupcakes decorados.",
+    "price": 9800,
+    "category": "cupcakes",
+    "thumbnail": "img/cupcakes.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Cookies Americanas",
+    "description": "Cookies con chips de chocolate.",
+    "price": 7500,
+    "category": "cookies",
+    "thumbnail": "img/cookies.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Brownie",
+    "description": "Brownie artesanal con nueces.",
+    "price": 6800,
+    "category": "cookies",
+    "thumbnail": "img/brownie.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Lemon Pie",
+    "description": "Base crocante con crema de limón.",
+    "price": 17000,
+    "category": "cakes",
+    "thumbnail": "img/lemonpie.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Red Velvet",
+    "description": "Torta Red Velvet con frosting de queso crema.",
+    "price": 22500,
+    "category": "cakes",
+    "thumbnail": "img/redvelvet.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Mini Cupcakes Chocolate",
+    "description": "Caja de 12 mini cupcakes.",
+    "price": 11500,
+    "category": "cupcakes",
+    "thumbnail": "img/cupcakes.jpg"
+  }
+]
